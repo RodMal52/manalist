@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Set code:</strong>
+  <%= @card_expansion.set_code %>
+</p>
+
+<p>
+  <strong>Card name:</strong>
+  <%= @card_expansion.card_name %>
+</p>
+
+<p>
+  <strong>Rarity:</strong>
+  <%= @card_expansion.rarity %>
+</p>
+
+<p>
+  <strong>Card num:</strong>
+  <%= @card_expansion.card_num %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @card_expansion.image %>
+</p>
+
+<%= link_to 'Edit', edit_card_expansion_path(@card_expansion) %> |
+<%= link_to 'Back', card_expansions_path %>

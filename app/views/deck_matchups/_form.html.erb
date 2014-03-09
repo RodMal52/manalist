@@ -1,0 +1,45 @@
+<%= form_for(@deck_matchup) do |f| %>
+  <% if @deck_matchup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@deck_matchup.errors.count, "error") %> prohibited this deck_matchup from being saved:</h2>
+
+      <ul>
+      <% @deck_matchup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :deck_id_1 %><br>
+    <%= f.text_field :deck_id_1 %>
+  </div>
+  <div class="field">
+    <%= f.label :deck_id_2 %><br>
+    <%= f.text_field :deck_id_2 %>
+  </div>
+  <div class="field">
+    <%= f.label :wins %><br>
+    <%= f.text_field :wins %>
+  </div>
+  <div class="field">
+    <%= f.label :losses %><br>
+    <%= f.text_field :losses %>
+  </div>
+  <div class="field">
+    <%= f.label :draws %><br>
+    <%= f.text_field :draws %>
+  </div>
+  <div class="field">
+    <%= f.label :match_date %><br>
+    <%= f.date_select :match_date %>
+  </div>
+  <div class="field">
+    <%= f.label :config_id %><br>
+    <%= f.text_field :config_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

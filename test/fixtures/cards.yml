@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cardname: MyString
+  manacost: MyString
+  color: MyString
+  power: MyString
+  toughness: MyString
+  loyalty_counter: 
+  card_type: MyString
+
+two:
+  cardname: MyString
+  manacost: MyString
+  color: MyString
+  power: MyString
+  toughness: MyString
+  loyalty_counter: 
+  card_type: MyString

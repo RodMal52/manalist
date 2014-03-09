@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  side_id: 
+  card_name: MyString
+  quantity: 
+
+two:
+  side_id: 
+  card_name: MyString
+  quantity: 

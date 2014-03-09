@@ -1,0 +1,27 @@
+<h1>Listing side_boards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Side</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @side_boards.each do |side_board| %>
+      <tr>
+        <td><%= side_board.side_id %></td>
+        <td><%= link_to 'Show', side_board %></td>
+        <td><%= link_to 'Edit', edit_side_board_path(side_board) %></td>
+        <td><%= link_to 'Destroy', side_board, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Side board', new_side_board_path %>

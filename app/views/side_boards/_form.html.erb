@@ -1,0 +1,21 @@
+<%= form_for(@side_board) do |f| %>
+  <% if @side_board.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@side_board.errors.count, "error") %> prohibited this side_board from being saved:</h2>
+
+      <ul>
+      <% @side_board.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :side_id %><br>
+    <%= f.text_field :side_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

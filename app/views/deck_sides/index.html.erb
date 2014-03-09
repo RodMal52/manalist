@@ -1,0 +1,29 @@
+<h1>Listing deck_sides</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Deck</th>
+      <th>Side</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @deck_sides.each do |deck_side| %>
+      <tr>
+        <td><%= deck_side.deck_id %></td>
+        <td><%= deck_side.side_id %></td>
+        <td><%= link_to 'Show', deck_side %></td>
+        <td><%= link_to 'Edit', edit_deck_side_path(deck_side) %></td>
+        <td><%= link_to 'Destroy', deck_side, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Deck side', new_deck_side_path %>

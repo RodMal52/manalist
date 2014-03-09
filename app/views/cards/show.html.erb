@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cardname:</strong>
+  <%= @card.cardname %>
+</p>
+
+<p>
+  <strong>Manacost:</strong>
+  <%= @card.manacost %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @card.color %>
+</p>
+
+<p>
+  <strong>Power:</strong>
+  <%= @card.power %>
+</p>
+
+<p>
+  <strong>Toughness:</strong>
+  <%= @card.toughness %>
+</p>
+
+<p>
+  <strong>Loyalty counter:</strong>
+  <%= @card.loyalty_counter %>
+</p>
+
+<p>
+  <strong>Card type:</strong>
+  <%= @card.card_type %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @card.description %>
+</p>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>

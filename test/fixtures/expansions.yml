@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  set_code: MyString
+  name: MyString
+  symbol: MyString
+  size: 
+  common_cards_num: 
+  uncommon_cards_num: 
+  rare_cards_num: 
+  mythic_cards_num: 
+  other_cards_num: 
+
+two:
+  set_code: MyString
+  name: MyString
+  symbol: MyString
+  size: 
+  common_cards_num: 
+  uncommon_cards_num: 
+  rare_cards_num: 
+  mythic_cards_num: 
+  other_cards_num: 

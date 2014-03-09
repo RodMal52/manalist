@@ -1,0 +1,25 @@
+<%= form_for(@deck_side) do |f| %>
+  <% if @deck_side.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@deck_side.errors.count, "error") %> prohibited this deck_side from being saved:</h2>
+
+      <ul>
+      <% @deck_side.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :deck_id %><br>
+    <%= f.text_field :deck_id %>
+  </div>
+  <div class="field">
+    <%= f.label :side_id %><br>
+    <%= f.text_field :side_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

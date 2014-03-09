@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  deck_id_1: 
+  deck_id_2: 
+  wins: 
+  losses: 
+  draws: 
+  match_date: 2014-03-08
+  config_id: 
+
+two:
+  deck_id_1: 
+  deck_id_2: 
+  wins: 
+  losses: 
+  draws: 
+  match_date: 2014-03-08
+  config_id: 

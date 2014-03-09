@@ -1,0 +1,39 @@
+<h1>Listing deck_matchups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Deck id 1</th>
+      <th>Deck id 2</th>
+      <th>Wins</th>
+      <th>Losses</th>
+      <th>Draws</th>
+      <th>Match date</th>
+      <th>Config</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @deck_matchups.each do |deck_matchup| %>
+      <tr>
+        <td><%= deck_matchup.deck_id_1 %></td>
+        <td><%= deck_matchup.deck_id_2 %></td>
+        <td><%= deck_matchup.wins %></td>
+        <td><%= deck_matchup.losses %></td>
+        <td><%= deck_matchup.draws %></td>
+        <td><%= deck_matchup.match_date %></td>
+        <td><%= deck_matchup.config_id %></td>
+        <td><%= link_to 'Show', deck_matchup %></td>
+        <td><%= link_to 'Edit', edit_deck_matchup_path(deck_matchup) %></td>
+        <td><%= link_to 'Destroy', deck_matchup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Deck matchup', new_deck_matchup_path %>

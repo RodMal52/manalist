@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Set code:</strong>
+  <%= @expansion.set_code %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @expansion.name %>
+</p>
+
+<p>
+  <strong>Symbol:</strong>
+  <%= @expansion.symbol %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @expansion.size %>
+</p>
+
+<p>
+  <strong>Common cards num:</strong>
+  <%= @expansion.common_cards_num %>
+</p>
+
+<p>
+  <strong>Uncommon cards num:</strong>
+  <%= @expansion.uncommon_cards_num %>
+</p>
+
+<p>
+  <strong>Rare cards num:</strong>
+  <%= @expansion.rare_cards_num %>
+</p>
+
+<p>
+  <strong>Mythic cards num:</strong>
+  <%= @expansion.mythic_cards_num %>
+</p>
+
+<p>
+  <strong>Other cards num:</strong>
+  <%= @expansion.other_cards_num %>
+</p>
+
+<%= link_to 'Edit', edit_expansion_path(@expansion) %> |
+<%= link_to 'Back', expansions_path %>

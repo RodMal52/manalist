@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  deck_id: 
+  username: MyString
+  name: MyString
+  format: MyString
+  type: 
+  colors: MyString
+  rating: 
+  creation_date: 2014-03-08
+  last_update: 2014-03-08
+
+two:
+  deck_id: 
+  username: MyString
+  name: MyString
+  format: MyString
+  type: 
+  colors: MyString
+  rating: 
+  creation_date: 2014-03-08
+  last_update: 2014-03-08

@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Deck:</strong>
+  <%= @deck.deck_id %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @deck.username %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @deck.name %>
+</p>
+
+<p>
+  <strong>Format:</strong>
+  <%= @deck.format %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @deck.type %>
+</p>
+
+<p>
+  <strong>Colors:</strong>
+  <%= @deck.colors %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @deck.rating %>
+</p>
+
+<p>
+  <strong>Creation date:</strong>
+  <%= @deck.creation_date %>
+</p>
+
+<p>
+  <strong>Last update:</strong>
+  <%= @deck.last_update %>
+</p>
+
+<%= link_to 'Edit', edit_deck_path(@deck) %> |
+<%= link_to 'Back', decks_path %>

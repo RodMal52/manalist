@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Deck id 1:</strong>
+  <%= @deck_matchup.deck_id_1 %>
+</p>
+
+<p>
+  <strong>Deck id 2:</strong>
+  <%= @deck_matchup.deck_id_2 %>
+</p>
+
+<p>
+  <strong>Wins:</strong>
+  <%= @deck_matchup.wins %>
+</p>
+
+<p>
+  <strong>Losses:</strong>
+  <%= @deck_matchup.losses %>
+</p>
+
+<p>
+  <strong>Draws:</strong>
+  <%= @deck_matchup.draws %>
+</p>
+
+<p>
+  <strong>Match date:</strong>
+  <%= @deck_matchup.match_date %>
+</p>
+
+<p>
+  <strong>Config:</strong>
+  <%= @deck_matchup.config_id %>
+</p>
+
+<%= link_to 'Edit', edit_deck_matchup_path(@deck_matchup) %> |
+<%= link_to 'Back', deck_matchups_path %>

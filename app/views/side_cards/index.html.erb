@@ -1,0 +1,31 @@
+<h1>Listing side_cards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Side</th>
+      <th>Card name</th>
+      <th>Quantity</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @side_cards.each do |side_card| %>
+      <tr>
+        <td><%= side_card.side_id %></td>
+        <td><%= side_card.card_name %></td>
+        <td><%= side_card.quantity %></td>
+        <td><%= link_to 'Show', side_card %></td>
+        <td><%= link_to 'Edit', edit_side_card_path(side_card) %></td>
+        <td><%= link_to 'Destroy', side_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Side card', new_side_card_path %>

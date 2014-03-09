@@ -1,0 +1,31 @@
+<h1>Listing player_relationships</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Username 1</th>
+      <th>Username 2</th>
+      <th>Relationship type</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @player_relationships.each do |player_relationship| %>
+      <tr>
+        <td><%= player_relationship.username_1 %></td>
+        <td><%= player_relationship.username_2 %></td>
+        <td><%= player_relationship.relationship_type %></td>
+        <td><%= link_to 'Show', player_relationship %></td>
+        <td><%= link_to 'Edit', edit_player_relationship_path(player_relationship) %></td>
+        <td><%= link_to 'Destroy', player_relationship, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Player relationship', new_player_relationship_path %>

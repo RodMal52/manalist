@@ -1,0 +1,43 @@
+<h1>Listing expansions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Set code</th>
+      <th>Name</th>
+      <th>Symbol</th>
+      <th>Size</th>
+      <th>Common cards num</th>
+      <th>Uncommon cards num</th>
+      <th>Rare cards num</th>
+      <th>Mythic cards num</th>
+      <th>Other cards num</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @expansions.each do |expansion| %>
+      <tr>
+        <td><%= expansion.set_code %></td>
+        <td><%= expansion.name %></td>
+        <td><%= expansion.symbol %></td>
+        <td><%= expansion.size %></td>
+        <td><%= expansion.common_cards_num %></td>
+        <td><%= expansion.uncommon_cards_num %></td>
+        <td><%= expansion.rare_cards_num %></td>
+        <td><%= expansion.mythic_cards_num %></td>
+        <td><%= expansion.other_cards_num %></td>
+        <td><%= link_to 'Show', expansion %></td>
+        <td><%= link_to 'Edit', edit_expansion_path(expansion) %></td>
+        <td><%= link_to 'Destroy', expansion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Expansion', new_expansion_path %>

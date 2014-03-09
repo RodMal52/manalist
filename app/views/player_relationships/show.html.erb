@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username 1:</strong>
+  <%= @player_relationship.username_1 %>
+</p>
+
+<p>
+  <strong>Username 2:</strong>
+  <%= @player_relationship.username_2 %>
+</p>
+
+<p>
+  <strong>Relationship type:</strong>
+  <%= @player_relationship.relationship_type %>
+</p>
+
+<%= link_to 'Edit', edit_player_relationship_path(@player_relationship) %> |
+<%= link_to 'Back', player_relationships_path %>
