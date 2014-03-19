@@ -9,8 +9,10 @@ gem 'turbolinks', '~> 2.1.0'
 gem 'jbuilder', '~> 1.5.3'
 gem 'bcrypt-ruby', '~> 3.1.2'
 gem 'sprockets', '=2.11.0'
-gem 'ar-octopus'
 
+gem 'thread_safe', :github => 'headius/thread_safe'
+
+gem 'ar-octopus', :git => 'git://github.com/tchandy/octopus.git'
 
 group :doc do
   gem 'sdoc', require: false

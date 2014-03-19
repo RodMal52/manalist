@@ -1,0 +1,23 @@
+octopus:
+  replicated: true
+  fully_replicated: false
+  octopus_enviroments:
+    - development
+  development:
+    shards:
+      slave1:
+        adapter: sqlite3
+        host: localhost
+        database: db/development_replication1.sqlite3
+      slave2:
+        adapter: sqlite3
+        host: localhost
+        database: db/development_replication2.sqlite3
+      slave3:
+        adapter: sqlite3
+        host: localhost
+        database: db/development_replication3.sqlite3
+      slave4:
+        adapter: sqlite3
+        host: localhost
+        database: db/development_replication4.sqlite3
