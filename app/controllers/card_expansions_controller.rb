@@ -69,6 +69,6 @@ class CardExpansionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def card_expansion_params
-      params.require(:card_expansion).permit(:set_code, :card_name, :rarity, :card_num, :image)
+      params.require(:card_expansion).permit( :rarity, :card_num, :image)
     end
 end

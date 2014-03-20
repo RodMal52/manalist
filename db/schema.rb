@@ -13,9 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140308232411) do
 
-  create_table "card_expansions", force: true do |t|
-    t.string   "set_code"
-    t.string   "card_name"
+  create_table "card_expansions", id: false, force: true do |t|
+    t.integer  "expansion_id"
+    t.integer  "card_id"
     t.string   "rarity"
     t.integer  "card_num"
     t.string   "image"

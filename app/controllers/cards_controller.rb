@@ -15,6 +15,8 @@ class CardsController < ApplicationController
   # GET /cards/new
   def new
     @card = Card.new
+   
+    
   end
 
   # GET /cards/1/edit
@@ -24,7 +26,9 @@ class CardsController < ApplicationController
   # POST /cards
   # POST /cards.json
   def create
-    @card = Card.new(card_params)
+    @card = Card.new(card_params[:id])
+    @card.card_expansions.build 
+
 
     respond_to do |format|
       if @card.save
@@ -47,7 +51,7 @@ class CardsController < ApplicationController
       else
         format.html { render action: 'edit' }
         format.json { render json: @card.errors, status: :unprocessable_entity }
-      end
+      end 
     end
   end
 
@@ -69,6 +73,7 @@ class CardsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def card_params
-      params.require(:card).permit(:cardname, :manacost, :color, :power, :toughness, :loyalty_counter, :card_type, :description)
+      params.require(:card).permit(:cardname, :manacost, :color, :power, :toughness, :loyalty_counter, :card_type, :description, :card_expansion_attributes => [ :rarity, :cardnum, :image])
+     
     end
 end

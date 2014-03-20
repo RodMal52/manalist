@@ -55,6 +55,8 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    composite_primary_keys (6.0.1)
+      activerecord (>= 4.0.0)
     devise (3.2.3)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -157,6 +159,7 @@ DEPENDENCIES
   bcrypt-ruby (~> 3.1.2)
   bootstrap-sass (~> 3.0.3.0)
   coffee-rails (~> 4.0.1)
+  composite_primary_keys (~> 6.0.1)
   devise (~> 3.2.2)
   figaro (~> 0.7.0)
   font-awesome-sass (~> 4.0.2)

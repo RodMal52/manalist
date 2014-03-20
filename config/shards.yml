@@ -1,6 +1,6 @@
 octopus:
   replicated: true
-  fully_replicated: false
+  fully_replicated: true
   octopus_enviroments:
     - development
   development:
