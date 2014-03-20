@@ -44,6 +44,23 @@
     <%= f.text_field :description %>
   </div>
   
+  <%= fields_for :card_expansions   do |fa| %>
+  <%= fa.hidden_field :card_id, :value => @card.id %>
+  <%= fa.hidden_field :expansion_id, :value => '1'%>
+  <div class="field">
+    <%= fa.label :rarity %><br>
+    <%= fa.text_field :rarity %>
+  </div>
+  <div class="field">
+    <%= fa.label :card_num %><br>
+    <%= fa.text_field :card_num %>
+  </div>
+  <div class="field">
+    <%= fa.label :image %><br>
+    <%= fa.text_field :image %>
+  </div>
+  
+  <% end %>
   <div class="actions">
     <%= f.submit %>
   </div>

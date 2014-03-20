@@ -3,8 +3,8 @@
 <table>
   <thead>
     <tr>
-      <th>Set code</th>
-      <th>Card name</th>
+      <th>Expansion ID</th>
+      <th>Card ID</th>
       <th>Rarity</th>
       <th>Card num</th>
       <th>Image</th>
@@ -17,8 +17,8 @@
   <tbody>
     <% @card_expansions.each do |card_expansion| %>
       <tr>
-        <td><%= card_expansion.set_code %></td>
-        <td><%= card_expansion.card_name %></td>
+        <td><%= card_expansion.expansion_id %></td>
+        <td><%= card_expansion.card_id %></td>
         <td><%= card_expansion.rarity %></td>
         <td><%= card_expansion.card_num %></td>
         <td><%= card_expansion.image %></td>
