@@ -1,6 +1,16 @@
-<h1>Listing expansions</h1>
+<h1>Expansions <small>Admin</small></h1>
 
-<table>
+<%= link_to 'New Expansion', new_expansion_path %>
+
+<%= form_tag expansions_path, method: 'get', html: {role: "form"} do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil, class: "btn btn-sm btn-primary" %>
+    <%= link_to "All", expansions_path, {class: "btn btn-sm btn-link"} %>
+  </p>
+<% end %>
+
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Set code</th>
@@ -38,6 +48,4 @@
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New Expansion', new_expansion_path %>
+<p><%= link_to "Back to Admin", admin_root_path %></p>

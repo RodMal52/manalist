@@ -1,10 +1,6 @@
 <h1>Cards <small>Admin</small></h1>
-<p><%= link_to "Back to Admin", admin_root_path %></p>
 
-<div class="text-center">
-  
- 
-</div>
+<%= link_to 'New Card', new_card_path %>
 
 <%= form_tag cards_path, method: 'get', html: {role: "form"} do %>
   <p>
@@ -50,11 +46,4 @@
   
 </table>
 
-<div class="text-center">
-  
-</div>
-
-
-
-
-<%= link_to 'New Card', new_card_path %>
+<p><%= link_to "Back to Admin", admin_root_path %></p>

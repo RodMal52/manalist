@@ -2,16 +2,16 @@
 // BOOTSTRAP VARIABLES OVERRIDES
 
 // Color system
-$brand-primary: #428bca;
+$brand-primary: #662200;
 $brand-success: #5cb85c;
 $brand-warning: #f0ad4e;
 $brand-danger: #d9534f;
 $brand-info: #5bc0de;
 
 // Body scaffolding
-$body-bg: #ffffff;
-$text-color: #373737;
-$link-color: $brand-primary;
+$body-bg: #ddcc88;
+$text-color: #662200;
+$link-color: #ff4400;
 $link-hover-color: darken($link-color, 15%);
 
 // Typography
@@ -60,9 +60,9 @@ $btn-font-weight: normal;
 $btn-link-disabled-color: #cccccc;
 
 // Buttons: Default
-$btn-default-color: #ffffff;
-$btn-default-bg: #bbbbbb;
-$btn-default-border: #cccccc;
+$btn-default-color: #ffee66;
+$btn-default-bg: #662200;
+$btn-default-border: #ff4400;
 
 // Buttons: Primary
 $btn-primary-color: $btn-default-color;
@@ -157,8 +157,8 @@ $navbar-default-toggle-border-color: #dddddd;
 
 // Navbar: Inverted navbar
 // -> Basics
-$navbar-inverse-color: #eeeeee; 
-$navbar-inverse-bg: #222222; 
+$navbar-inverse-color: #ffee66; 
+$navbar-inverse-bg: #662200; 
 $navbar-inverse-border: darken($navbar-inverse-bg, 7%); 
 // -> Links
 $navbar-inverse-link-color: #eeeeee; 
@@ -213,13 +213,13 @@ $table-border-color: #dddddd;
 
 // Forms
 // -> Inputs
-$input-color: $text-color; // Text color for <input>s
-$input-bg: #ffffff; // <input> background color
-$input-border: #cccccc; // <input> border color
+$input-color: #ffee66; // Text color for <input>s
+$input-bg: #dd6633; // <input> background color
+$input-border: #dd3300; // <input> border color
 $input-border-radius: $border-radius-base; // <input> border radius
-$input-color-placeholder: #eeeeee; // Placeholder text color
+$input-color-placeholder: #dd3300; // Placeholder text color
 // -> Input states
-$input-border-focus: #66afe9; // Border color for inputs on focus
+$input-border-focus: #dd3300; // Border color for inputs on focus
 $input-bg-disabled: #dddddd; // <input disabled> background color
 // -> Input sizes
 $input-height-base: 38px; // Default .form-control height
@@ -312,10 +312,10 @@ $close-color: #000000;
 $close-text-shadow: 0px 1px 0px #ffffff; 
 
 // Type
-$text-muted: #cccccc; // Text muted color
-$abbr-border-color: #cccccc; // Abbreviations and acronyms border color
-$headings-small-color: #cccccc; // Headings small color
-$blockquote-small-color: #cccccc; // Blockquote small color
+$text-muted: #ff4400; // Text muted color
+$abbr-border-color: #ff4400; // Abbreviations and acronyms border color
+$headings-small-color: #ff4400; // Headings small color
+$blockquote-small-color: #ff4400; // Blockquote small color
 $blockquote-border-color: #eeeeee; // Blockquote border color
 $page-header-border-color: #eeeeee; // Page header border color
 

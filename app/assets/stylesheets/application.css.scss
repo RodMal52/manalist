@@ -4,4 +4,13 @@
  *= require_self
  */
 @import "framework_and_overrides";
+#headerImg {
+    background-image:url('http://www.surftin.com/images/free-magic-the-gathering-wall_254557.jpg');
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0px;
+}
 
+.container {
+    overflow: auto;
+}
