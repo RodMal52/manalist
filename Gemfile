@@ -1,3 +1,4 @@
+
 source 'https://rubygems.org'
 ruby '2.1.1'
 gem 'rails', '4.0.3'
@@ -12,7 +13,7 @@ gem 'sprockets', '=2.11.0'
 gem 'composite_primary_keys', '~> 6.0.1'
 gem 'thread_safe', :github => 'headius/thread_safe'
 
-gem 'ar-octopus', :git => 'git://github.com/tchandy/octopus.git'
+gem 'ar-octopus', :git => 'git://github.com/tchandy/octopus.git', :require => 'octopus'
 
 group :doc do
   gem 'sdoc', require: false
