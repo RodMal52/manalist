@@ -1,28 +1,54 @@
-== README
+<b>Información general: Manalist</b>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<b>Nombre de los integrantes del equipo:</b>
 
-Things you may want to cover:
+- Rodrigo Maldonado Weil
+- Rodrigo Villalobos Sánchez
+- Víctor Colín Amador
+- Andrés Peláez Fialdini
+- José Roberto Torres Mancilla
 
-* Ruby version
+<b>Requerimientos:</b>
 
-* System dependencies
+- Ubuntu 12.04 LTS
+- Ruby 2.1.1
+- Rails 4.0.3
+- Curl
+- RVM (Ruby Version Manager)
+- Git
 
-* Configuration
+<b>Instrucciones de instalación:</b>
 
-* Database creation
+<i>Las instrucciones a continucación deben ser introducidas en la terminal</i>
 
-* Database initialization
+1. <code>sudo apt-get install curl</code>
+2. <code>sudo apt-get install git</code>
+3. <code>\curl -sSL https://get.rvm.io | bash -s stable</code>
+4. <code>source ~/.rvm/scripts/rvm</code>
+5. Verificar si el siguiente comando regresa "rvm is a function": <code>type rvm | head -n 1</code>
+6. <code>rvm requirements</code>
+7. <code>rvm install ruby-2.1.1</code>
+8. <code>rvm use ruby-2.1.1</code>
+9. <code>gem install rails -v 4.0.3</code>
+10. <code>git clone https://github.com/rodmal52/manalist</code>
+11. <code>cd manalist</code>
+12. <code>bundle install</code>
+13. <code>bundle exec rake db:migrate</code>
+14. <code>bundle exec rake db:seed</code>
+15. <code>rails s</code>
 
-* How to run the test suite
+<b>Instrucciones de uso:</b>
 
-* Services (job queues, cache servers, search engines, etc.)
+1. En el navegador, escribir la dirección "localhost:3000"
+2. Hacer click en "Sign In" e introducir usuario y password (admin@example.com, 1234)
 
-* Deployment instructions
+<b>Consideraciones especiales</b>
 
-* ...
+- Aún falta pulir el modelo "cards" de la base de datos.
+- El proceso de Sign Up funciona pero no genera usuarios porque falta configurar los mailers de confirmación.
+- Puede accesar a las direcciones "/cards", "/card_expansions", "/expansions", "/decks", "/decks_cards", etc. Sin embargo, algunas de ellas se encuentran aún en desarrollo y con funcionalidad limitada.
+- La base de datos posee un Master y 4 Slaves, todos simulados en el localhost de manera temporal. Esto cambiará una vez que se haya configurado los webhosts externos. Se utiliza la gem de Octopus para Rails (https://github.com/tchandy/octopus).
+- En este momento, todas las operaciones de "write" las lleva a cabo el Master y todas las de "read" los esclavos.
+- Rails utiliza una tecnología llamada ActiveRecord (http://guides.rubyonrails.org/active_record_basics.html), un ORM u Object-Relational Mapper, para realizar todas las operaciones de queries.
 
-
-Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
